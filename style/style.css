@@ -32,6 +32,11 @@ body{
 	text-decoration: none;
 }
 
+.smnrow{
+	display:none;
+}
+
+
 .pnav:hover {
 	color:gray;
 }
@@ -354,11 +359,26 @@ footer {
 	}
 }
 
+
+
 @media all and (min-width: 495px) and (max-width:670px){
 	
 	#title {
 		display:none;
 	}
+	
+	.smnrow{
+		display:block;
+		box-sizing:border-box;
+	}
+	
+	.smimggal{
+		float:left;
+		width:25%;
+		box-sizing:border-box;
+		padding:1%;
+	}
+	
 	.lsidehead{
 		width:15%;
 	}
@@ -367,14 +387,73 @@ footer {
 		height: 90%;
 		width: 80%;
 	}
+	
+	.nrow{
+		display:none;
+	}
+	
+	.smnrow{
+		box-sizing:border-box;
+	}
+
+	.smnrow::after {
+	    content: "";
+	    clear: both;
+	    display: block;
+	}
+	
+	.smcatbox{
+		display:block;
+		width:50%;
+		box-sizing:border-box;
+		float:left;
+		padding:10px;
+	}
 }
 
 @media all and (min-width: 0px) and (max-width:495px){
+
+	.nrow{
+		display:none;
+	}
 	
+	.smnrow{
+		display:block;
+		box-sizing:border-box;
+	}
+	
+	.smimggal{
+		float:left;
+		width:25%;
+		box-sizing:border-box;
+		padding:1%;
+	}
+
+	.smnrow::after {
+	    content: "";
+	    clear: both;
+	    display: block;
+	}
+	
+	.smcatbox{
+		display:block;
+		width:50%;
+		box-sizing:border-box;
+		float:left;
+		padding:10px;
+	}
+
 	.linebreak{
 		display:block;
 	}
 	
+	#smglass{
+		margin-left:9%;
+	}
+	
+	#smceramics{
+		margin-left:-11%;
+	}
 	.labs{
 		display:none;
 	}
@@ -394,7 +473,7 @@ footer {
 		display:inline-block;
 		font-size:4vw;
 		position:absolute;
-		margin-left:-10%;
+		margin-left:16%;
 		margin-top:-32%;
 	}
 	
